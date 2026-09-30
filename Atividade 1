@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main() {
+    float consumo;      // guarda o consumo do morador atual
+    float soma = 0;
+    float media;
+    int i;
+
+    for (i = 1; i <= 5; i++) {
+        printf("Digite o consumo do morador %d (em m3): ", i);
+        scanf("%f", &consumo);
+
+        // Verifica na hora se esta dentro da media ou acima
+        if (consumo <= 20) {
+            printf("Morador %d: %.2f m3 -> dentro da media\n\n", i, consumo);
+        } else {
+            printf("Morador %d: %.2f m3 -> acima da media\n\n", i, consumo);
+        }
+
+        soma = soma + consumo;   // acumula para calcular a media depois
+    }
+
+    media = soma / 5;
+
+    printf("Consumo medio geral: %.2f m3\n", media);
+
+    return 0;
+}
