@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    float consumo;     
+    float consumo;  
     float soma = 0;
     float media;
     int i;
