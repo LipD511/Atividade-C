@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    float consumo;      // guarda o consumo do morador atual
+    float consumo;     
     float soma = 0;
     float media;
     int i;
